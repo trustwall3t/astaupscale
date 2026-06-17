@@ -8,6 +8,9 @@
     <base data-react-helmet="true" />
     <link href="main/assets/css/style.css" rel="stylesheet" />
     <link href="main/assets/css/styledb6.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="main/assets/favicon.png">
     <meta name="generator" content="Gatsby 3.9.1" />
     <style>
@@ -387,12 +390,69 @@ window.smartsupp||(function(d) {
                     </div>
                 </div>
         </section>
-        <section class="p-home-m-trustpilot p-home__section" style="margin-top: 50px;">
+        <section class="p-home-m-dashboard p-home__section">
+            <div class="page__container p-home-m-dashboard__inner">
+                <span class="p-home-m-dashboard__badge">Live Terminal</span>
+                <h2 class="p-home-m-dashboard__title">A professional dashboard built for precision.</h2>
+                <p class="p-home-m-dashboard__desc">
+                    Experience real-time pricing and advanced charting tools directly in your browser.
+                </p>
+
+                <div class="p-home-m-dashboard__terminal" aria-label="Trading terminal preview">
+                    <div class="p-home-m-dashboard__terminal-bar">
+                        <div class="p-home-m-dashboard__window-dots" aria-hidden="true">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <nav class="p-home-m-dashboard__nav" aria-label="Terminal navigation">
+                            <span>Markets</span>
+                            <span class="is-active">Chart</span>
+                            <span>Trade</span>
+                        </nav>
+                    </div>
+                    <div class="p-home-m-dashboard__terminal-body" style="height:500px;width:100%">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="p-home-m-dashboard__widget tradingview-widget-container" style="height:500px;width:100%">
+                            <div class="tradingview-widget-container__widget" style="height:500px;width:100%"></div>
+                            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/EURUSD/" rel="noopener nofollow" target="_blank"><span class="blue-text">EURUSD chart</span></a><span class="trademark"> by TradingView</span></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                            {
+                            "allow_symbol_change": true,
+                            "calendar": false,
+                            "details": false,
+                            "hide_side_toolbar": true,
+                            "hide_top_toolbar": false,
+                            "hide_legend": false,
+                            "hide_volume": false,
+                            "hotlist": false,
+                            "interval": "60",
+                            "locale": "en",
+                            "save_image": true,
+                            "style": "1",
+                            "symbol": "FX:EURUSD",
+                            "theme": "dark",
+                            "timezone": "Etc/UTC",
+                            "backgroundColor": "#141418",
+                            "gridColor": "rgba(242, 242, 242, 0.06)",
+                            "watchlist": [],
+                            "withdateranges": false,
+                            "compareSymbols": [],
+                            "studies": [],
+                            "autosize": true
+                            
+                            }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-home-m-trustpilot p-home__section">
             <div class="page__container">
                 <div class="p-home-m-trustpilot__header">
-                    <h2 class="com-c-title p-home-m-trustpilot__title">Trusted by traders worldwide</h2>
-                    <p class="com-c-description p-home-m-trustpilot__desc">
-                        Real feedback from customers who use Astla Upscale Limited every day.
+                    <h2 class="p-home-m-trustpilot__title">Trusted by serious traders</h2>
+                    <p class="p-home-m-trustpilot__desc">
+                        Verified feedback from clients who demand precision, speed, and clarity.
                     </p>
                 </div>
 
@@ -424,19 +484,18 @@ window.smartsupp||(function(d) {
                             <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                         </div>
 
-                        <h3 class="p-home-m-trustpilot-card__headline">Fast withdrawals and genuinely helpful support</h3>
+                        <h3 class="p-home-m-trustpilot-card__headline">Unmatched Precision</h3>
                         <p class="p-home-m-trustpilot-card__body">
-                            I signed up to test the platform and was impressed by how smooth the onboarding was. The
-                            copy-trading tools are clear, spreads have been consistent, and my first withdrawal was processed
-                            quicker than expected. Support answered my question in minutes and actually solved the issue.
+                            The real-time charting tools are a game-changer. I've used many platforms, but the speed and
+                            clarity of this dashboard are on a completely different level. Highly recommended for serious traders.
                         </p>
 
                         <div class="p-home-m-trustpilot-card__footer">
                             <div class="p-home-m-trustpilot-card__author">
-                                <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">M</span>
+                                <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">A</span>
                                 <div class="p-home-m-trustpilot-card__author-text">
-                                    <div class="p-home-m-trustpilot-card__author-name">Michael R.</div>
-                                    <div class="p-home-m-trustpilot-card__author-sub">United Kingdom • March 2025</div>
+                                    <div class="p-home-m-trustpilot-card__author-name">Alexander V.</div>
+                                    <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                 </div>
                             </div>
                             <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -471,11 +530,10 @@ window.smartsupp||(function(d) {
                             <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                         </div>
 
-                        <h3 class="p-home-m-trustpilot-card__headline">Clean UI and great copy-trading tools</h3>
+                        <h3 class="p-home-m-trustpilot-card__headline">Built for Clarity</h3>
                         <p class="p-home-m-trustpilot-card__body">
-                            The dashboard is simple to understand, even if you’re new. I like how the trade history and
-                            performance metrics are laid out. Deposits were instant and everything felt secure from the
-                            start.
+                            The dashboard is intuitive from day one. Live pricing, trade history, and performance metrics are
+                            laid out exactly where you need them — clean, fast, and genuinely professional.
                         </p>
 
                         <div class="p-home-m-trustpilot-card__footer">
@@ -483,7 +541,7 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">S</span>
                                 <div class="p-home-m-trustpilot-card__author-text">
                                     <div class="p-home-m-trustpilot-card__author-name">Sofia L.</div>
-                                    <div class="p-home-m-trustpilot-card__author-sub">Spain • March 2026</div>
+                                    <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                 </div>
                             </div>
                             <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -518,10 +576,10 @@ window.smartsupp||(function(d) {
                             <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                         </div>
 
-                        <h3 class="p-home-m-trustpilot-card__headline">Professional experience and quick answers</h3>
+                        <h3 class="p-home-m-trustpilot-card__headline">Institutional-Grade Tools</h3>
                         <p class="p-home-m-trustpilot-card__body">
-                            I had a question about account verification and got a clear step-by-step reply. Execution has
-                            been smooth and the platform feels reliable. Overall a strong experience so far.
+                            Account verification was straightforward, execution has been consistently smooth, and the terminal
+                            delivers the kind of professional experience I expect from a serious broker.
                         </p>
 
                         <div class="p-home-m-trustpilot-card__footer">
@@ -529,7 +587,7 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">D</span>
                                 <div class="p-home-m-trustpilot-card__author-text">
                                     <div class="p-home-m-trustpilot-card__author-name">Daniel K.</div>
-                                    <div class="p-home-m-trustpilot-card__author-sub">Canada • April 2025</div>
+                                    <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                 </div>
                             </div>
                             <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -564,10 +622,10 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                             </div>
 
-                            <h3 class="p-home-m-trustpilot-card__headline">Reliable execution and clear reporting</h3>
+                            <h3 class="p-home-m-trustpilot-card__headline">Real-Time Confidence</h3>
                             <p class="p-home-m-trustpilot-card__body">
-                                Trades have executed smoothly for me and the reporting is easy to follow. I can see my
-                                positions, history, and performance without digging through menus. Everything feels polished.
+                                Every trade executes cleanly and the reporting gives me full visibility into my positions.
+                                It's the polished, precision-first experience I've been looking for.
                             </p>
 
                             <div class="p-home-m-trustpilot-card__footer">
@@ -575,7 +633,7 @@ window.smartsupp||(function(d) {
                                     <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">A</span>
                                     <div class="p-home-m-trustpilot-card__author-text">
                                         <div class="p-home-m-trustpilot-card__author-name">Amelia P.</div>
-                                        <div class="p-home-m-trustpilot-card__author-sub">Australia • December 2024</div>
+                                        <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                     </div>
                                 </div>
                                 <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -610,10 +668,10 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                             </div>
 
-                            <h3 class="p-home-m-trustpilot-card__headline">Great experience for beginners</h3>
+                            <h3 class="p-home-m-trustpilot-card__headline">Precision at Every Level</h3>
                             <p class="p-home-m-trustpilot-card__body">
-                                As someone newer to trading, I appreciated the clean layout and how easy it was to find what
-                                I needed. Verification was straightforward and I felt supported throughout.
+                                As someone newer to trading, I appreciated how the live terminal made complex data feel simple.
+                                Verification was quick, the interface is elegant, and I felt supported from the very first session.
                             </p>
 
                             <div class="p-home-m-trustpilot-card__footer">
@@ -621,7 +679,7 @@ window.smartsupp||(function(d) {
                                     <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">J</span>
                                     <div class="p-home-m-trustpilot-card__author-text">
                                         <div class="p-home-m-trustpilot-card__author-name">Jason T.</div>
-                                        <div class="p-home-m-trustpilot-card__author-sub">United States • july 2025</div>
+                                        <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                     </div>
                                 </div>
                                 <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -657,19 +715,18 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                             </div>
 
-                            <h3 class="p-home-m-trustpilot-card__headline">Fast withdrawals and genuinely helpful support</h3>
+                            <h3 class="p-home-m-trustpilot-card__headline">Unmatched Precision</h3>
                             <p class="p-home-m-trustpilot-card__body">
-                                I signed up to test the platform and was impressed by how smooth the onboarding was. The
-                                copy-trading tools are clear, spreads have been consistent, and my first withdrawal was processed
-                                quicker than expected. Support answered my question in minutes and actually solved the issue.
+                                The real-time charting tools are a game-changer. I've used many platforms, but the speed and
+                                clarity of this dashboard are on a completely different level. Highly recommended for serious traders.
                             </p>
 
                             <div class="p-home-m-trustpilot-card__footer">
                                 <div class="p-home-m-trustpilot-card__author">
-                                    <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">M</span>
+                                    <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">A</span>
                                     <div class="p-home-m-trustpilot-card__author-text">
-                                        <div class="p-home-m-trustpilot-card__author-name">Michael R.</div>
-                                        <div class="p-home-m-trustpilot-card__author-sub">United Kingdom • May 2025</div>
+                                        <div class="p-home-m-trustpilot-card__author-name">Alexander V.</div>
+                                        <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                     </div>
                                 </div>
                                 <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -704,11 +761,10 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                             </div>
 
-                            <h3 class="p-home-m-trustpilot-card__headline">Clean UI and great copy-trading tools</h3>
+                            <h3 class="p-home-m-trustpilot-card__headline">Built for Clarity</h3>
                             <p class="p-home-m-trustpilot-card__body">
-                                The dashboard is simple to understand, even if you’re new. I like how the trade history and
-                                performance metrics are laid out. Deposits were instant and everything felt secure from the
-                                start.
+                                The dashboard is intuitive from day one. Live pricing, trade history, and performance metrics are
+                                laid out exactly where you need them — clean, fast, and genuinely professional.
                             </p>
 
                             <div class="p-home-m-trustpilot-card__footer">
@@ -716,7 +772,7 @@ window.smartsupp||(function(d) {
                                     <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">S</span>
                                     <div class="p-home-m-trustpilot-card__author-text">
                                         <div class="p-home-m-trustpilot-card__author-name">Sofia L.</div>
-                                        <div class="p-home-m-trustpilot-card__author-sub">Spain • June 2025</div>
+                                        <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                     </div>
                                 </div>
                                 <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -751,10 +807,10 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                             </div>
 
-                            <h3 class="p-home-m-trustpilot-card__headline">Professional experience and quick answers</h3>
+                            <h3 class="p-home-m-trustpilot-card__headline">Institutional-Grade Tools</h3>
                             <p class="p-home-m-trustpilot-card__body">
-                                I had a question about account verification and got a clear step-by-step reply. Execution has
-                                been smooth and the platform feels reliable. Overall a strong experience so far.
+                                Account verification was straightforward, execution has been consistently smooth, and the terminal
+                                delivers the kind of professional experience I expect from a serious broker.
                             </p>
 
                             <div class="p-home-m-trustpilot-card__footer">
@@ -762,7 +818,7 @@ window.smartsupp||(function(d) {
                                     <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">D</span>
                                     <div class="p-home-m-trustpilot-card__author-text">
                                         <div class="p-home-m-trustpilot-card__author-name">Daniel K.</div>
-                                        <div class="p-home-m-trustpilot-card__author-sub">Canada • August 2025</div>
+                                        <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                     </div>
                                 </div>
                                 <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -797,10 +853,10 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                             </div>
 
-                            <h3 class="p-home-m-trustpilot-card__headline">Reliable execution and clear reporting</h3>
+                            <h3 class="p-home-m-trustpilot-card__headline">Real-Time Confidence</h3>
                             <p class="p-home-m-trustpilot-card__body">
-                                Trades have executed smoothly for me and the reporting is easy to follow. I can see my
-                                positions, history, and performance without digging through menus. Everything feels polished.
+                                Every trade executes cleanly and the reporting gives me full visibility into my positions.
+                                It's the polished, precision-first experience I've been looking for.
                             </p>
 
                             <div class="p-home-m-trustpilot-card__footer">
@@ -808,7 +864,7 @@ window.smartsupp||(function(d) {
                                     <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">A</span>
                                     <div class="p-home-m-trustpilot-card__author-text">
                                         <div class="p-home-m-trustpilot-card__author-name">Amelia P.</div>
-                                            <div class="p-home-m-trustpilot-card__author-sub">Australia • October 2025</div>
+                                            <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                     </div>
                                 </div>
                                 <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -843,10 +899,10 @@ window.smartsupp||(function(d) {
                                 <span class="p-home-m-trustpilot-card__star" aria-hidden="true"></span>
                             </div>
 
-                            <h3 class="p-home-m-trustpilot-card__headline">Great experience for beginners</h3>
+                            <h3 class="p-home-m-trustpilot-card__headline">Precision at Every Level</h3>
                             <p class="p-home-m-trustpilot-card__body">
-                                As someone newer to trading, I appreciated the clean layout and how easy it was to find what
-                                I needed. Verification was straightforward and I felt supported throughout.
+                                As someone newer to trading, I appreciated how the live terminal made complex data feel simple.
+                                Verification was quick, the interface is elegant, and I felt supported from the very first session.
                             </p>
 
                             <div class="p-home-m-trustpilot-card__footer">
@@ -854,7 +910,7 @@ window.smartsupp||(function(d) {
                                     <span class="p-home-m-trustpilot-card__avatar" aria-hidden="true">J</span>
                                     <div class="p-home-m-trustpilot-card__author-text">
                                         <div class="p-home-m-trustpilot-card__author-name">Jason T.</div>
-                                        <div class="p-home-m-trustpilot-card__author-sub">United States • February 2025</div>
+                                        <div class="p-home-m-trustpilot-card__author-sub">Verified User • March 2026</div>
                                     </div>
                                 </div>
                                 <a class="p-home-m-trustpilot-card__link" href="#" aria-label="Read more reviews">
@@ -869,35 +925,282 @@ window.smartsupp||(function(d) {
                     <a href="#"
                         class="_633ZZh0WP6 com-c-button com-c-button_color_accent p-home-c-button-desktop p-home-m-devices__button p-home-m-trustpilot__cta-button"
                         type="button"
-                        style="min-height: unset;background:#0094ff;border-radius:8px">
+                        style="min-height: unset;background:#0094ff;color:#ffffff;border-radius:8px;font-weight:700">
                         See all reviews
                     </a>
                 </div>
             </div>
         </section>
+        <section class="p-home-m-steps p-home__section">
+            <div class="page__container">
+                <div class="p-home-m-steps__header">
+                    <h2 class="p-home-m-steps__title">Getting started is simple</h2>
+                    <p class="p-home-m-steps__desc">
+                        Follow these steps to open your account and start trading with confidence.
+                    </p>
+                </div>
+
+                <div class="p-home-m-steps__slider" aria-label="Getting started steps">
+                    <div class="p-home-m-steps__track">
+                        <article class="p-home-m-steps__item">
+                            <span class="p-home-m-steps__number" aria-hidden="true">1</span>
+                            <h3 class="p-home-m-steps__headline">Create your account</h3>
+                            <p class="p-home-m-steps__body">
+                                Register in minutes, complete verification, and get instant access to your personal
+                                trading dashboard.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item">
+                            <span class="p-home-m-steps__number" aria-hidden="true">2</span>
+                            <h3 class="p-home-m-steps__headline">Fund your account</h3>
+                            <p class="p-home-m-steps__body">
+                                Deposit funds using one of our supported payment methods. Your balance will be available
+                                once the transaction is confirmed.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item">
+                            <span class="p-home-m-steps__number" aria-hidden="true">3</span>
+                            <h3 class="p-home-m-steps__headline">Start trading</h3>
+                            <p class="p-home-m-steps__body">
+                                Browse available markets, analyse charts and place your first trade. Use stop-loss orders
+                                to manage your risk.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item">
+                            <span class="p-home-m-steps__number" aria-hidden="true">4</span>
+                            <h3 class="p-home-m-steps__headline">Copy expert strategies</h3>
+                            <p class="p-home-m-steps__body">
+                                Mirror top-performing traders, follow live market insights, and build your portfolio with
+                                proven copy-trading tools.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item">
+                            <span class="p-home-m-steps__number" aria-hidden="true">5</span>
+                            <h3 class="p-home-m-steps__headline">Withdraw with confidence</h3>
+                            <p class="p-home-m-steps__body">
+                                Request payouts when you are ready. Enjoy fast processing, clear reporting, and dedicated
+                                support at every stage.
+                            </p>
+                        </article>
+
+                        <!-- duplicate set for seamless loop -->
+                        <article class="p-home-m-steps__item" aria-hidden="true">
+                            <span class="p-home-m-steps__number" aria-hidden="true">1</span>
+                            <h3 class="p-home-m-steps__headline">Create your account</h3>
+                            <p class="p-home-m-steps__body">
+                                Register in minutes, complete verification, and get instant access to your personal
+                                trading dashboard.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item" aria-hidden="true">
+                            <span class="p-home-m-steps__number" aria-hidden="true">2</span>
+                            <h3 class="p-home-m-steps__headline">Fund your account</h3>
+                            <p class="p-home-m-steps__body">
+                                Deposit funds using one of our supported payment methods. Your balance will be available
+                                once the transaction is confirmed.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item" aria-hidden="true">
+                            <span class="p-home-m-steps__number" aria-hidden="true">3</span>
+                            <h3 class="p-home-m-steps__headline">Start trading</h3>
+                            <p class="p-home-m-steps__body">
+                                Browse available markets, analyse charts and place your first trade. Use stop-loss orders
+                                to manage your risk.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item" aria-hidden="true">
+                            <span class="p-home-m-steps__number" aria-hidden="true">4</span>
+                            <h3 class="p-home-m-steps__headline">Copy expert strategies</h3>
+                            <p class="p-home-m-steps__body">
+                                Mirror top-performing traders, follow live market insights, and build your portfolio with
+                                proven copy-trading tools.
+                            </p>
+                        </article>
+
+                        <article class="p-home-m-steps__item" aria-hidden="true">
+                            <span class="p-home-m-steps__number" aria-hidden="true">5</span>
+                            <h3 class="p-home-m-steps__headline">Withdraw with confidence</h3>
+                            <p class="p-home-m-steps__body">
+                                Request payouts when you are ready. Enjoy fast processing, clear reporting, and dedicated
+                                support at every stage.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
         <style>
-            .p-home-m-trustpilot__header {
-                max-width: 860px;
-                margin: 0 auto 18px;
+            .p-home-m-dashboard,
+            .p-home-m-trustpilot,
+            .p-home-m-steps {
+                background: #0a0a0a;
+                color: #ffffff;
+            }
+
+            .p-home-m-dashboard {
+                padding: 72px 0 48px;
+            }
+
+            .p-home-m-trustpilot {
+                padding: 0 0 48px;
+            }
+
+            .p-home-m-dashboard__inner {
+                text-align: center;
+                max-width: 920px;
+            }
+
+            .p-home-m-dashboard__badge {
+                display: inline-block;
+                background: #0094ff;
+                color: #ffffff;
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: 0.4px;
+                text-transform: uppercase;
+                padding: 6px 14px;
+                border-radius: 6px;
+                margin-bottom: 22px;
+            }
+
+            .p-home-m-dashboard__title {
+                font-family: 'Playfair Display', Georgia, serif;
+                font-size: clamp(32px, 4vw, 48px);
+                font-weight: 700;
+                line-height: 1.15;
+                margin: 0 0 16px;
+                color: #ffffff;
+            }
+
+            .p-home-m-dashboard__desc {
+                font-family: 'Inter', sans-serif;
+                font-size: clamp(16px, 2vw, 20px);
+                line-height: 1.6;
+                color: #a0a0a0;
+                max-width: 640px;
+                margin: 0 auto 36px;
+            }
+
+            .p-home-m-dashboard__terminal {
+                background: #141418;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 14px;
+                overflow: hidden;
+                box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
                 text-align: left;
             }
 
+            .p-home-m-dashboard__terminal-bar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 14px 18px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                background: rgba(255, 255, 255, 0.02);
+            }
+
+            .p-home-m-dashboard__window-dots {
+                display: flex;
+                gap: 7px;
+            }
+
+            .p-home-m-dashboard__window-dots span {
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+            }
+
+            .p-home-m-dashboard__window-dots span:nth-child(1) {
+                background: #ff5f57;
+            }
+
+            .p-home-m-dashboard__window-dots span:nth-child(2) {
+                background: #febc2e;
+            }
+
+            .p-home-m-dashboard__window-dots span:nth-child(3) {
+                background: #28c840;
+            }
+
+            .p-home-m-dashboard__nav {
+                display: flex;
+                gap: 28px;
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                color: #a0a0a0;
+            }
+
+            .p-home-m-dashboard__nav .is-active {
+                color: #0094ff;
+                font-weight: 600;
+            }
+
+            .p-home-m-dashboard__terminal-body {
+                padding: 0;
+            }
+
+            .p-home-m-dashboard__widget {
+                height: 400px;
+                width: 100%;
+            }
+
+            .p-home-m-dashboard__widget .tradingview-widget-container__widget {
+                height: calc(100% - 28px) !important;
+            }
+
+            .p-home-m-dashboard__widget .tradingview-widget-copyright {
+                font-size: 11px;
+                padding: 6px 12px 10px;
+                text-align: right;
+                opacity: 0.55;
+            }
+
+            .p-home-m-trustpilot__header {
+                max-width: 920px;
+                margin: 0 auto 28px;
+                text-align: center;
+            }
+
+            .p-home-m-trustpilot__title {
+                font-family: 'Playfair Display', Georgia, serif;
+                font-size: clamp(28px, 3.5vw, 40px);
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 0 0 10px;
+                color: #ffffff;
+            }
+
+            .p-home-m-trustpilot__desc {
+                font-family: 'Inter', sans-serif;
+                font-size: 17px;
+                line-height: 1.6;
+                color: #a0a0a0;
+                margin: 0;
+            }
+
             .p-home-m-trustpilot__slider {
-                max-width: 860px;
-                margin: 0 auto;
+                width: 100%;
                 overflow: hidden;
                 position: relative;
                 padding-bottom: 2px;
-                -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
-                mask-image: linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+                -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+                mask-image: linear-gradient(90deg, transparent 0, #000 4%, #000 96%, transparent 100%);
             }
 
             .p-home-m-trustpilot__track {
                 display: flex;
-                gap: 14px;
+                gap: 16px;
                 width: max-content;
                 will-change: transform;
-                animation: p-home-m-trustpilot-marquee 42s linear infinite;
+                animation: p-home-m-trustpilot-marquee 48s linear infinite;
             }
 
             @keyframes p-home-m-trustpilot-marquee {
@@ -911,22 +1214,22 @@ window.smartsupp||(function(d) {
             }
 
             .p-home-m-trustpilot__cta {
-                max-width: 860px;
-                margin: 16px auto 0;
+                max-width: 920px;
+                margin: 28px auto 0;
                 display: flex;
                 justify-content: center;
             }
 
             .p-home-m-trustpilot-card {
-                background: #ffffff;
-                border: 1px solid rgba(0, 148, 255, 0.16);
+                background: #141418;
+                border: 1px solid rgba(0, 148, 255, 0.18);
                 border-radius: 12px;
-                box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
-                padding: 20px 22px;
+                box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+                padding: 22px 24px;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                flex: 0 0 clamp(280px, 40vw, 360px);
+                flex: 0 0 clamp(300px, 38vw, 380px);
             }
 
             .p-home-m-trustpilot-card__top {
@@ -952,21 +1255,23 @@ window.smartsupp||(function(d) {
                 align-items: center;
                 justify-content: center;
                 border-radius: 8px;
-                background: rgba(0, 182, 122, 0.14);
-                color: #00b67a;
+                background: rgba(0, 148, 255, 0.15);
+                color: #0094ff;
             }
 
             .p-home-m-trustpilot-card__brand-name {
-                font-size: 16px;
-                color: #0b0f1a;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                color: #ffffff;
             }
 
             .p-home-m-trustpilot-card__meta {
                 display: inline-flex;
                 align-items: center;
                 gap: 8px;
-                color: rgba(11, 15, 26, 0.72);
-                font-size: 14px;
+                color: #a0a0a0;
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
                 line-height: 1.2;
             }
 
@@ -985,7 +1290,7 @@ window.smartsupp||(function(d) {
                 width: 22px;
                 height: 22px;
                 border-radius: 4px;
-                background-color: #00b67a;
+                background-color: #0094ff;
                 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 2.2l2.62 6.04 6.53.57-4.94 4.28 1.47 6.34L12 16.86 6.32 19.43l1.47-6.34L2.85 8.81l6.53-.57L12 2.2z'/%3E%3C/svg%3E");
                 background-repeat: no-repeat;
                 background-position: center;
@@ -993,34 +1298,38 @@ window.smartsupp||(function(d) {
             }
 
             .p-home-m-trustpilot-card__headline {
-                margin: 12px 0 6px;
-                font-size: 18px;
-                color: #0b0f1a;
+                font-family: 'Playfair Display', Georgia, serif;
+                margin: 14px 0 8px;
+                font-size: 20px;
+                font-weight: 700;
+                color: #ffffff;
+                line-height: 1.25;
             }
 
             .p-home-m-trustpilot-card__body {
                 margin: 0;
-                color: rgba(11, 15, 26, 0.76);
-                line-height: 1.6;
+                font-family: 'Inter', sans-serif;
+                color: #a0a0a0;
+                line-height: 1.65;
+                font-size: 14px;
             }
 
             .p-home-m-trustpilot-card__footer {
-                margin-top: 16px;
+                margin-top: auto;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 gap: 14px;
                 flex-wrap: wrap;
-                padding-top: 14px;
-                border-top: 1px solid rgba(11, 15, 26, 0.10);
-                margin-top: auto;
+                padding-top: 16px;
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
             }
 
             .p-home-m-trustpilot-card__author {
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                min-width: 240px;
+                min-width: 200px;
             }
 
             .p-home-m-trustpilot-card__avatar {
@@ -1030,28 +1339,34 @@ window.smartsupp||(function(d) {
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
+                font-family: 'Inter', sans-serif;
                 font-weight: 800;
-                color: #0b0f1a;
-                background: rgba(0, 148, 255, 0.12);
+                color: #ffffff;
+                background: rgba(0, 148, 255, 0.85);
             }
 
             .p-home-m-trustpilot-card__author-name {
-                font-weight: 700;
-                color: #0b0f1a;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                color: #ffffff;
                 line-height: 1.2;
+                font-size: 14px;
             }
 
             .p-home-m-trustpilot-card__author-sub {
-                color: rgba(11, 15, 26, 0.68);
-                font-size: 13px;
+                font-family: 'Inter', sans-serif;
+                color: #777;
+                font-size: 12px;
                 line-height: 1.2;
                 margin-top: 2px;
             }
 
             .p-home-m-trustpilot-card__link {
                 color: #0094ff;
+                font-family: 'Inter', sans-serif;
                 text-decoration: none;
-                font-weight: 700;
+                font-weight: 600;
+                font-size: 13px;
                 outline: 0;
             }
 
@@ -1060,9 +1375,21 @@ window.smartsupp||(function(d) {
             }
 
             @media (max-width: 750px) {
+                .p-home-m-dashboard {
+                    padding: 48px 0 32px;
+                }
+
+                .p-home-m-trustpilot {
+                    padding-bottom: 48px;
+                }
+
                 .p-home-m-trustpilot-card {
-                    padding: 16px;
+                    padding: 18px;
                     border-radius: 10px;
+                }
+
+                .p-home-m-dashboard__widget {
+                    height: 400px;
                 }
             }
 
@@ -1077,10 +1404,129 @@ window.smartsupp||(function(d) {
                 .p-home-m-trustpilot-card {
                     scroll-snap-align: start;
                 }
+
+                .p-home-m-steps__track {
+                    animation: none;
+                    overflow-x: auto;
+                    padding-bottom: 6px;
+                    scroll-snap-type: x mandatory;
+                }
+
+                .p-home-m-steps__item {
+                    scroll-snap-align: center;
+                }
+            }
+
+            .p-home-m-steps {
+                padding: 0 0 72px;
+            }
+
+            .p-home-m-steps__header {
+                max-width: 640px;
+                margin: 0 auto 32px;
+                text-align: center;
+            }
+
+            .p-home-m-steps__title {
+                font-family: 'Playfair Display', Georgia, serif;
+                font-size: clamp(28px, 3.5vw, 40px);
+                font-weight: 700;
+                line-height: 1.2;
+                margin: 0 0 10px;
+                color: #ffffff;
+            }
+
+            .p-home-m-steps__desc {
+                font-family: 'Inter', sans-serif;
+                font-size: 17px;
+                line-height: 1.6;
+                color: #a0a0a0;
+                margin: 0;
+            }
+
+            .p-home-m-steps__slider {
+                height: 400px;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                align-items: center;
+                -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+                mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+            }
+
+            .p-home-m-steps__track {
+                display: flex;
+                gap: 24px;
+                width: max-content;
+                will-change: transform;
+                animation: p-home-m-steps-marquee 50s linear infinite;
+            }
+
+            @keyframes p-home-m-steps-marquee {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+
+            .p-home-m-steps__item {
+                flex: 0 0 clamp(260px, 32vw, 320px);
+                text-align: center;
+                padding: 28px 22px;
+                background: #141418;
+                border: 1px solid rgba(0, 148, 255, 0.18);
+                border-radius: 12px;
+                box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+            }
+
+            .p-home-m-steps__number {
+                width: 52px;
+                height: 52px;
+                margin: 0 auto 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: #0094ff;
+                color: #ffffff;
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            .p-home-m-steps__headline {
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                color: #ffffff;
+                margin: 0 0 10px;
+                line-height: 1.3;
+            }
+
+            .p-home-m-steps__body {
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                line-height: 1.65;
+                color: #a0a0a0;
+                margin: 0;
+            }
+
+            @media (max-width: 750px) {
+                .p-home-m-steps {
+                    padding-bottom: 48px;
+                }
+
+                .p-home-m-steps__slider {
+                    height: 400px;
+                }
             }
         </style>
-        <section  style="height: 700px; width: calc(100vw-30px); padding: 0 30px;">
-            <!-- TradingView Widget BEGIN -->
+        <!-- <section  style="height: 700px; width: calc(100vw-30px); padding: 0 30px;">
+           
 <div class="tradingview-widget-container" style="height:500px;width:100%">
   <div class="tradingview-widget-container__widget" style="height:500px;width:100%"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener nofollow" target="_blank"><span class="blue-text">AAPL stock chart</span></a><span class="trademark"> by TradingView</span></div>
@@ -1111,8 +1557,8 @@ window.smartsupp||(function(d) {
 }
   </script>
 </div>
-<!-- TradingView Widget END -->
-        </section>
+
+        </section> -->
         <section class="p-home-m-seo-numbers p-home__section p-home-m-seo-numbers--ltr">
             <ul class="p-home-m-seo-numbers__list">
                 <li class="p-home-m-seo-numbers-item p-home-m-seo-numbers-item--l">
